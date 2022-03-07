@@ -1,0 +1,98 @@
+header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+}
+
+.tap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid blue;
+    width: 500px;
+}
+
+.bannerinpic {
+    background-position: left;
+    background-image: url(//freewebsitetemplates.com/preview/mustacheenthusiast/images/the-beacon.jpg);    
+    height: 544px;
+    background-repeat: no-repeat;
+    border: 5px solid pink;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    /* align-items: right; */
+    
+    
+}
+
+/*********** white banner */
+
+.whtbckgrn {
+    border: 5px solid orange;
+    background-color: white;
+    font-weight: 1000;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: fit-content;
+    height: 50px;
+   
+}
+
+
+/* *********mid banner********* */
+.midbanners{
+    border: 5px solid orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-around;
+    height:200px;
+    width: auto;
+    
+}
+
+.blkbckgrn{
+    border: 5px solid orange;
+    background-color: black;
+    color:white;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    /* font-size: 15px; */
+    text-transform: uppercase;
+    padding: 5px;
+    display:flex;
+    align-items: center;
+    width: fit-content;
+    height: 30px;
+    
+}
+
+
+/* read me button */
+.readme {
+    height: 50px;
+    width: 50px;
+    border: 5px solid red;
+    background: green;
+    /* color: white; */
+    text-align: center;
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    position: relative;
+    left: 700px;
+    top: 25px;
+    
+}
