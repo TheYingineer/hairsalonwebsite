@@ -80,7 +80,7 @@ header {
 
 
 
-@media(min-width:501px) { 
+@media(min-width:600px) { 
     
 }
 
@@ -88,7 +88,7 @@ header {
 
 
 /* *********MOBILE VERSION******* */
-@media(max-width:501px) { 
+@media(max-width:601px) { 
    
 
     .tap .bulletins {

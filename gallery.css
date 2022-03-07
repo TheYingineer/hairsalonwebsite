@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+
+}
+
+@media(min-width:600px) { 
+    .photoablum {
+        border: 5px solid green;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        width: 1000px;
+        padding-top: 20px;
+    }
+
+}
+
+
+/* *********MOBILE VERSION******* */
+@media(max-width:601px) {
+    .photoablum {
+        border: 5px solid green;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        width: 550px;
+        padding-top: 20px;
+    }
+ }
