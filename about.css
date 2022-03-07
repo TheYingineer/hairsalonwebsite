@@ -1,0 +1,114 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+}
+
+.tap .bulletins{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid blue;
+    width: 500px;
+    list-style-type: none;
+}
+
+/******** end of heading********** */
+
+
+
+
+.aboutme{
+    border: 5px solid pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.banner{
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.words {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+
+}
+
+/* ***********footers********* */
+
+
+.imgs {
+     border: 5px solid yellow;
+     height 45px; 
+     width: 205px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+.iconimg {
+    border: 2px solid white;
+    height: 44px;
+}
+
+
+/* end of footer */
+
+
+
+@media(min-width:501px) { 
+    
+}
+
+
+
+
+/* *********MOBILE VERSION******* */
+@media(max-width:501px) { 
+   
+
+    .tap .bulletins {
+        display: none;
+        overflow: hidden;
+        position: relative;
+        background-color: aqua;
+    }
+
+    .banner{
+        width: 400px;
+    }
+
+    .aboutme img {
+        width: 400px;
+    }    
+
+    .words {
+        width:400px;
+    }
+
+    
+}

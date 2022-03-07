@@ -1,3 +1,9 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     display:flex;
     flex-direction: column;
@@ -6,14 +12,19 @@ header {
     border: 5px solid red;
 }
 
-.tap {
+.tap .bulletins{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border: 5px solid blue;
     width: 500px;
+    list-style-type: none;
 }
+
+
+/********* end of heading********* */
+
 
 .bannerinpic {
     background-position: left;
@@ -22,9 +33,7 @@ header {
     height: 544px;
     background-repeat: no-repeat;
     border: 5px solid pink;  
-    display:inline-flexbox;
-    direction: ltr;
-    padding-left: 50%;
+    
  
 }
 
@@ -146,15 +155,12 @@ header {
     
 }
 
-footer .socialicons {
-    border: 5px solid yellow;
-    background: black;
-    color: white;
-    display: flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items: center;
-    
+
+/* ***********footers********* */
+
+footer .socialicons{
+    height: 100px;
+    width: auto;
 }
 
 .imgs {
@@ -172,17 +178,93 @@ footer .socialicons {
 }
 
 
+/* end of footer */
+
+.tap .nav{
+    list-style-type: none;
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    overflow: none;
+    font-display: none;
+    /* display: none; */
+}
+
+.tap a:hover{
+    background-color: yellow;
+
+
+}
+
 
 
 @media(min-width:501px) { 
+    footer .socialicons {
+        border: 5px solid green;
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .tap .nav{
+    display:none;
+    }
+
+    .bannerinpic {
+    display:inline-flexbox;
+    direction: ltr;
+    padding-left: 50%;
+    }
+
+    
 }
 
 
 
 
-
-
+/* *********MOBILE VERSION******* */
 @media(max-width:501px) { 
+    footer .socialicons {
+        border: 5px solid green;
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
 
+    .tap .bulletins {
+        display: none;
+        overflow: hidden;
+        position: relative;
+        background-color: aqua;
+    }
+
+    .midbanners{
+        width: 470px;
+        height: 300px;
+    }
+
+    .blkbckgrn{
+        height: 80px;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .piclink {
+        flex-direction: column;    
+    }
+
+    .piclink1 {
+        width: 470px;   
+    }
+    
+  
     
 }
