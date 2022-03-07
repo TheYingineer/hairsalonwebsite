@@ -17,17 +17,29 @@ header {
 
 .bannerinpic {
     background-position: left;
-    background-image: url(//freewebsitetemplates.com/preview/mustacheenthusiast/images/the-beacon.jpg);    
+    background-image: url(//freewebsitetemplates.com/preview/mustacheenthusiast/images/the-beacon.jpg);  
+    min-width: 960px;  
     height: 544px;
     background-repeat: no-repeat;
-    border: 5px solid pink;
-    display:grid;
-    grid-template-rows:1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    /* align-items: right; */
-    
-    
+    border: 5px solid pink;  
+    display:inline-flexbox;
+    direction: ltr;
+    padding-left: 50%;
+ 
 }
+
+
+.allwordNbutton{
+    border: 5px solid orange;
+    height: 400px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-top: 30px;
+}
+
 
 /*********** white banner */
 
@@ -38,9 +50,8 @@ header {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     display:flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 5px;
     width: fit-content;
     height: 50px;
@@ -53,11 +64,10 @@ header {
     border: 5px solid orangered;
     display: flex;
     flex-direction: column;
-    align-items: right;
-    justify-content: space-around;
+    align-items: left;
+    justify-content: space-evenly;
     height:200px;
-    width: auto;
-    
+    width: fit-content;
 }
 
 .blkbckgrn{
@@ -66,33 +76,113 @@ header {
     color:white;
     font-weight: 800;
     font-family: 'Inter', sans-serif;
-    /* font-size: 15px; */
     text-transform: uppercase;
-    padding: 5px;
     display:flex;
     align-items: center;
-    width: fit-content;
-    height: 30px;
-    
-}
+   height: 40px;
+  } 
 
 
 /* read me button */
-.readme {
+.readme button {
+    background: aqua;
+    color:antiquewhite;
+    font-weight: bolder;
+    border-radius: 5px;
     height: 50px;
-    width: 50px;
-    border: 5px solid red;
-    background: green;
-    /* color: white; */
     text-align: center;
-    text-decoration:none;
     display: flex;
     align-items: center;
-    transition-duration: 0.4s;
     cursor: pointer;
+       
+}
 
-    position: relative;
-    left: 700px;
-    top: 25px;
+.readme button a:hover {
+    background:darkgreen;
+    text-decoration: none;
+    color: white;
+}
+
+.piclink {
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:auto;
+}
+
+.piclink1 {
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:auto;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.piclink2 {
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:auto;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.piclink3 {
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:auto;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+footer .socialicons {
+    border: 5px solid yellow;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.imgs {
+     border: 5px solid pink;
+     height 45px; 
+     width: 205px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+.iconimg {
+    border: 2px solid white;
+    height: 44px;
+}
+
+
+
+
+@media(min-width:501px) { 
+}
+
+
+
+
+
+
+@media(max-width:501px) { 
+
     
 }
