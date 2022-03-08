@@ -1,0 +1,115 @@
+*{box-sizing: border-box;
+    padding:0;
+    margin :0;
+}
+
+.everthingfithere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid purple;
+    /* background-color: aquamarine; */
+}
+
+.bannerblog {
+    border: 5px solid orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:70px;
+    width: 100px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.blogtitle {
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.readthisbutton  {
+    
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: black;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+
+
+
+@media(min-width:600px) {
+    .box {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
+    }
+
+    .blogword {
+        border: 2px solid black;
+        height: 303px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+        
+    }
+    
+    .blogpic {
+        border: 2px solid black;
+    }
+
+   }
+  
+  
+  /* *********MOBILE VERSION******* */
+  @media(max-width:601px) {
+    .box {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+    }
+
+
+    .blogword {
+        /* border: 2px solid black; */
+        height: 303px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        }
+
+}

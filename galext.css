@@ -16,7 +16,7 @@
 
 }
 
-.banner1 {
+.bannergalext1 {
     background-color: black;
     color: white;
     width: 300px;
@@ -35,18 +35,6 @@
 
 }
 
-.banner2 {
-    background-color: black;
-    color: white;
-    width: 300px;
-    height: 100px;
-    font-size: x-large;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .wordgalext {
     
@@ -56,25 +44,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    /* width: 500px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
 
 @media(min-width:600px) {
-
+  .wordgalext {
+      width: 600px;
+  }
+   
  }
 
 
 /* *********MOBILE VERSION******* */
 @media(max-width:601px) {
 
+ .containergalext{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+   .picgalext {
+    width: 460px;
+   }
+
+   .wordgalext {
+       width: 400px;
+   }
    
-
-    .picgalext {
-        width: 300px;
-        height: 150px;
-    }
-
-
 }
