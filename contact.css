@@ -1,0 +1,27 @@
+ * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid salmon;
+}
+
+.bannercontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    width: 300px;
+    
+}
