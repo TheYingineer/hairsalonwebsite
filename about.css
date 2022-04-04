@@ -89,14 +89,7 @@ header {
 
 /* *********MOBILE VERSION******* */
 @media(max-width:601px) { 
-   
 
-    .tap .bulletins {
-        display: none;
-        overflow: hidden;
-        position: relative;
-        background-color: aqua;
-    }
 
     .banner{
         width: 400px;
